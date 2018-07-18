@@ -39,7 +39,7 @@ def house_name():
 def clan_name():
     length = random.randint(2, 3)
 
-    first = ['kana', 'ome', 'shon', 'io', 'xa', 'ha']
+    first = ['kana', 'ome', 'shon', 'io', 'xa', 'ha', 'zha']
     middle = ['za', 'na', 'ca', 'da', 'ja']
     last = ['wai', 'chan', 'shoni', 'ni', 'la', 'ma']
 
@@ -60,16 +60,17 @@ def party_name():
         'Jade Eye Party',
         'Silver Party',
         'New Party',
-        'Summer Breeze Party'
+        'Summer Wind Party',
+        'Party of the Red Rose'
     ])
 
 if __name__ == "__main__":
-    for x in range(100000):
+    for x in range(10000):
         male = random.randint(0, 1) == 1
 
         prefix = 'Lady '
         if male:
             prefix = 'Lord '
 
-        print prefix + random_name(male=male) + ' of the ' + house_name() + ' and clan ' + clan_name() + ' and ' + party_name()
+        print prefix + random_name(male=male) + ' of house ' + house_name() + ' and clan ' + clan_name() + ' membor of the ' + party_name()
     
