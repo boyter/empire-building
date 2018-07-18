@@ -9,7 +9,7 @@ def random_name(male=True):
         middle = ['yo', 'ke', 'ka', 'ku', 'to', 'mo', 'ma', 'mu', 'chin', 'saio', 'sio']
         last = ['sai', 'ke', 'ma', 'ra', 'shi', 'nu', 'jun', 'kapi', 'kai', 'dar', 'wai', 'shi']
     else:
-        first = ['ma', 'na', 'ir', 'ka', 'je', 'te', 'an', 'ja']
+        first = ['ma', 'na', 'ir', 'ka', 'je', 'te', 'an', 'ja', 'mu']
         middle = ['co', 'ru', 'su', 'hi', 'an']
         last = ['ra', 'ya', 'lan', 'ma', 'lia', 'ai', 'ni', 'shi']
 
@@ -65,7 +65,7 @@ def party_name():
     ])
 
 if __name__ == "__main__":
-    for x in range(10000):
+    for x in range(100):
         male = random.randint(0, 1) == 1
 
         prefix = 'Lady '
