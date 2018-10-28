@@ -72,5 +72,5 @@ if __name__ == "__main__":
         if male:
             prefix = 'Lord '
 
-        print prefix + random_name(male=male) + ' of house ' + house_name() + ' and clan ' + clan_name() + ' membor of the ' + party_name()
+        print prefix + random_name(male=male) + ' of house ' + house_name() + ' and clan ' + clan_name() + ' member of the ' + party_name()
     
